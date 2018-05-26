@@ -1,6 +1,18 @@
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
-from mysite.core.forms import SignUpForm
+from .forms import SignUpForm
+from django.contrib.auth.models import User
+# from .models import User
+from django.http import HttpResponse
+# from .models import Pet
+from django.http import Http404
+
+def home(request):
+    # pets = Pet.objects.all()
+    # return HttpResponse('<p> success </p>')
+    return render(request, 'home.html', )
+#   will use render instead
+
 
 def signup(request):
     if request.method == 'POST':

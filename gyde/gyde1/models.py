@@ -8,7 +8,7 @@ from django.dispatch import receiver
 
 
 #first_name, last_name, email, user_name, password 
-LEVELCHOICES = ((1, _('Teacher')), (2, _('Student')))
+LEVELCHOICES = ((1, ('Teacher')), (2, ('Student')))
 
 
 class Profile(models.Model):
