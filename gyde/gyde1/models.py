@@ -1,11 +1,13 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 
 
 CREATE TABLE user ( id INT(11) NOT NULL AUTO_INCREMENT, first_name VARCHAR(50), last_name VARCHAR(50), email VARCHAR(50), user_name VARCHAR(32), password VARCHAR(32), level ENUM('Teacher', 'Student'), user_roles ENUM('Client', 'Admin'), num_feedbacks INT(12), num_invites INT(12), num_sessions INT(12), num_days_since_last_visit INT(5), num_following INT(12), num_followers INT(12), PRIMARY KEY (id));
 
 
+
+ claas User(models.Model):
 
 # class Post(models.Model):
 #     title = models.CharField(max_length=200)
