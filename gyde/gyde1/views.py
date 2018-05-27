@@ -10,7 +10,7 @@ from django.http import Http404
 def home(request):
     # pets = Pet.objects.all()
     # return HttpResponse('<p> success </p>')
-    return render(request, 'home.html', )
+    return render(request, 'homepage/homepage.html', )
 #   will use render instead
 
 
@@ -29,3 +29,11 @@ def signup(request):
     else:
         form = SignUpForm()
     return render(request, '../templates/signup.html', {'form': form})
+
+
+def login(request):
+        return render(request, 'loginpage/login.html', )
+
+
+def profile(request):
+        return render(request, 'profilepage/user_profile.html', )
