@@ -25,5 +25,6 @@ urlpatterns = [
     # re_path(r'^login/$', views.login, name='login'),
     re_path(r'^login/$', auth_views.login, {'template_name': 'loginpage/login.html'}, name='login'),
     re_path(r'^profile/$', views.profile, name='profile'),
+    re_path(r'^newsfeed/$', views.newsfeed, name='newsfeed'),
 
 ]

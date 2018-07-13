@@ -37,3 +37,7 @@ def login(request):
 
 def profile(request):
         return render(request, 'profilepage/user_profile.html', )
+
+
+def newsfeed(request):
+        return render(request, 'newsfeedpage/feed.html', )
