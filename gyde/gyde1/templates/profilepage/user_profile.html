@@ -22,11 +22,15 @@
       <li class="user-links">
         <div class="user">
           <img class="profile-pic" src="https://vinoo.co/assets/profile_default.png">
-          <a class="profile-name" onclick="window.location.reload()">Firstname</a>
+          <a class="profile-name" onclick="window.location.reload()">{{ user.first_name }}</a>
         </div>
         <i class="messenger fa fa-comments-o" aria-hidden="true"></i>
         <i class="notifs fa fa-bell" aria-hidden="true"></i>
         <i class="help fa fa-info-circle" aria-hidden="true"></i>
+        <div class="user">
+          <img class="profile-pic" src="https://vinoo.co/assets/profile_default.png">
+          <a class="profile-name" href="{% url 'home' %}">{{ user.first_name }}</a>
+        </div>
       </li>
     </ul>
     <div class="nav-sub"></div>
